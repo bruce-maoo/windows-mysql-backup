@@ -1,6 +1,6 @@
 @echo off
 echo.
-echo      MySQL-db-backup
+echo MySQL-db-backup
  
 echo *****************************
 echo.
