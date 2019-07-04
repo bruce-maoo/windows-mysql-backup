@@ -18,7 +18,7 @@ md "E:\testlink1919data\%Ymd%"
  
 echo.
  
-echo MySQL-db-backup finish£¬please check it.
+echo MySQL-db-backup finish,please check it.
  
 echo.
 echo.
