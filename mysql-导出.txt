@@ -1,0 +1,37 @@
+您无法登陆,因为您使用的登陆方法在此计算机上不被允许
+WIN-S5J0OTOFA6O\
+
+mysqldump -h 远程服务器IP或域名 -u 远端数据库账号 -p'远端数据库密码' --default-character-set=utf8 数据库名字 > /tmp/database_db.sql
+cd /usr/local/mysql/bin/
+./mysqldump -h mysql.example.com -u username -p'passwd' --default-character-set=utf8 database1 > /tmp/database_db.sql
+
+mysqldump -h 172.16.254.118 -u root -p'root' --default-character-set=utf8 test > /tmp/database_db.sql
+
+mysqldump --opt -h172.16.254.118 -uroot -proot --skip-lock-tables test> test.sql
+
+mysqldump -h 远程服务器IP或域名 -u 远端数据库账号 -p'远端数据库密码' --default-character-set=utf8 数据库名字 > /tmp/database_db.sql
+
+mysqldump: Couldn't execute 'SELECT COLUMN_NAME,                       JSON_EXTR
+ACT(HISTOGRAM, '$."number-of-buckets-specified"')                FROM informatio
+n_schema.COLUMN_STATISTICS                WHERE SCHEMA_NAME = 'mysql' AND TABLE_
+NAME = 'columns_priv';': Unknown table 'COLUMN_STATISTICS' in information_schema
+ (1109)
+ 
+ C:\Program Files\MySQL\MySQL Server 8.0\bin>
+ mysqldump --opt -h 172.16.254.23  -u root -p mysql > ..\..\sql\mysql-2.sql
+ 
+ 
+ mysqldump --opt -h 172.16.254.23  -u root -p testlink1919 > ..\..\sql\testlink1919.sql
+ 
+ %date:~0,10%
+  mysqldump --opt -h 172.16.254.23  -u root -p testlink1919 > ..\..\sql\%date:~0,10%-testlink1919.sql
+ C:\Program Files\MySQL\MySQL Server 8.0\bin>
+ mysqldump -u root -p mysql > ..\sql\test2.sql
+ 
+ 
+-------------------------------------------------------------------
+@echo off  
+set "Ymd=%date:~,4%%date:~5,2%%date:~8,2%"  
+D:\mysql-5.7.26-winx64\bin\mysqldump --opt -h 172.16.254.23 -u root -PXbosoft1 --password=root mysql > D:\mysql_backup\test_%Ymd%.sql  
+@echo on  
+---------------------------------------------------------------------
